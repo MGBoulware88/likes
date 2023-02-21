@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Likes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Part 1 HTML -->
+    <!-- <div class="user-card">
+        <div class="top-row">
+            <p class="username">Some User</p>
+            <div class="likes">
+                <p id="like-counter">3</p>
+                <p>like(s)</p>
+            </div>
+            <button type="button" class="like-button" onclick="incLikeCount()">Like</button>
+        </div>
+        <div class="bot-text">
+            <p>This is some filler text, it can say anything we like</p>
+        </div>
+    </div> -->
+
+    <!-- Part 2 HTML -->
+    <!-- Title Bar -->
+    <div class="title-bar">
+        <p>Network</p>
+    </div>
+    <!-- 2nd block is titling the content's right column -->
+    <div class="feed-title">
+        <p>Your Feed</p>
+    </div>
+    <!-- Main Content Area -->
+    <div class="main">
+    <!-- Left Column -->
+    <div class="left-col">
+        <div class="user-info">
+            <img class="profile-pic" src="./static/user-circle.png" alt="user placeholder pic">
+            <a href="#">Add an avatar</a>
+            <p class="username">James Doe</p>
+        </div>
+    </div>
+        <!-- Right Column User Feed -->
+        <div class="feed">
+            <!-- Main Title -->
+            
+            <!-- news feed content cards -->
+            <div class="cards">
+                <!-- each card has multiple components (copy/paste from Part 1) -->
+                <div class="top-row">
+                    <p class="username">Neil M</p>
+                    <!-- boxing the like counter & counter to match the spacing away from username -->
+                    <div class="likes">
+                        <p id="like-counterA">9</p>
+                        <p>like(s)</p>
+                        <!-- I could div the button away to flex a gap, but I think giving the button left margin is cleaner -->
+                        <button type="button" class="like-button" id="buttonA" onclick="incLikeCount(this)">Like</button>
+                    </div>
+                </div>
+                <div class="bot-text">
+                    <p>I just set up this new discord bot, let me know what you all think. <a href="#">link</a></p>
+                </div>
+            </div>
+            <div class="cards">
+                <!-- there are 3, so c/p 2 more times -->
+                <div class="top-row">
+                    <p class="username">Nichole K</p>
+                    <div class="likes">
+                        <p id="like-counterB">12</p>
+                        <p>like(s)</p>
+                        <button type="button" class="like-button" id="buttonB" onclick="incLikeCount(this)">Like</button>
+                    </div>
+                </div>
+                <div class="bot-text">
+                    <p>Just finished my <a href="#">next comic</a>, check it out.</p>
+                </div>
+            </div>
+            <div class="cards">
+                <!-- card #3 -->
+                <div class="top-row">
+                    <p class="username">Jim R</p>
+                    <div class="likes">
+                        <p id="like-counterC">9</p>
+                        <p>like(s)</p>
+                        <button type="button" class="like-button" id="buttonC" onclick="incLikeCount(this)">Like</button>
+                    </div>
+                </div>
+                <div class="bot-text">
+                    <p>I can't stop listening to the <a href="#">new album</a>. Who else is liking it?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

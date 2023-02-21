@@ -1,0 +1,113 @@
+/* Part 1 CSS 
+
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+body {
+    padding: 40px 80px;
+}
+.user-card {
+    border: 4px solid black;
+    padding: 10px 10px;
+    width: 40%;
+
+}
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.user-name {
+    font-size: 14pt;
+}
+.likes {
+    display: flex;
+    gap: 2px;
+}
+.like-button {
+    background-color: rgb(255, 217, 102);
+    padding: 2px 4px;
+    box-shadow: 2px 2px black;
+} */
+
+/* Part 2 CSS */
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto:wght@300;400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+/* Everything is centered on the page, so body padding could be used for this */
+body {
+    padding: 0px 80px;
+}
+
+/* Title Bar */
+.title-bar {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    font-size: 22pt; 
+    margin-bottom: 20px;
+}
+/* Feed Title */
+.feed-title {
+    font-size: 22pt;
+    text-align: center;
+    margin-bottom: 20px;
+    /* I could margin top&bot and remove from title bar, but 2x margin-bot is more consistent styling I think? If I end up with everything having margin-bot: 20px, that could turn into some condensing later */
+}
+/* Main Content */
+/* Main */
+.main {
+    display: flex;
+    gap: 20px;
+}
+/* User Info (L Col) */
+.user-info {
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10px;
+    gap: 15px;
+}
+.profile-pic {
+    height: 60px;
+}
+/* News Feed */
+.cards {
+    border: 4px solid black;
+    padding: 10px 10px;
+    margin-bottom: 10px; /* 10px looks a lot better, not going to be combining everything into an m-b: 20px class */
+    /* width: 40%; */
+
+}
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.username {
+    font-size: 16pt;
+    flex: 1;
+}
+.likes {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+}
+.like-button {
+    background-color: rgb(255, 217, 102);
+    padding: 2px 4px;
+    box-shadow: 2px 2px black;
+    margin-left: 20px;
+} 
